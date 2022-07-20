@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<style>
+    input {
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    form {
+
+        text-align: center;
+        padding: 10px;
+    }
+
+    .new {
+        
+        text-align: center;
+        
+    }
+    .parent-div{
+        text-align: center;
+        width: 300px;
+        border: #dbdbdb solid 1px;
+        margin: 0 auto;
+        margin-top: 50px;
+        
+    }
+    h1 {
+        color: black;
+        font-size: 40px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 50px;
+        
+    }
+</style>
+
+<body>
+    <h1>LOGIN TO PREDICT THE HOUSING PRICE</h1><br>
+    <div class="parent-div">
+        <div>
+            <form action="/profile" method="post">
+                <label>EMAIL</label><br>
+                <input name="email" type="email" placeholder="Enter your Email"><br><br>
+                <label>PASSWORD</label><br>
+                <input name="password" type="password" placeholder="write your password"><br><br>
+                <input type="submit" value="LOGIN"><br><br>
+
+            </form>
+        </div>
+
+
+        <div class="new">
+            <form action="/new">
+                <label>New Here?</label>
+                <input value="Sign Up" type="submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</body>
+
+</html>

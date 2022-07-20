@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Housing Data</title>
+</head>
+<style>
+    .price{
+        text-align: center;
+        width: 300px;
+        border: #dbdbdb solid 1px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        
+        padding: 10px;
+        
+    }
+    .right{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+    p{
+        font-size: 15px;
+        
+    }
+    h2{
+        font-size: 20px;
+    }
+    </style>
+<body>
+    <div>
+    
+        <form >
+
+            <h1>Housing Price Prediction</h1><br>
+           <h3>Given Values</h2> 
+           <p>Longitude = {{Longitude}}</h2><br>
+           <p>Latitude = {{Latitude}}</h3><br>
+           <p>Housing Median Age={{Housing_Median_Age}}</h4><br>
+           <p>Total Rooms={{Total_Rooms}}</h5><br>
+           <p>Total Bedrooms={{Total_Bedrooms}}</h6><br>
+           <p>Population={{Population}}</h7><br>
+            <p>Households={{Households}}</h7><br>
+           <p>Median Income={{Median_Income}}</h8>
+            
+    </form>
+
+</div>
+<div class="price">
+    <h3>The Predicted Price is ={{pred}}</h3>
+</div>
+
+</body>
+
+</html>

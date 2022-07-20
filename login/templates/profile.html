@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Housing Data</title>
+</head>
+<style>
+    input[type=number] {
+        width: 60px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        text-align: center;
+    }
+
+    h1 {
+        color: black;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    input {
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+</style>
+
+<body>
+    <table>
+        <form action="/final" method="post">
+
+            <h1>Housing Price Prediction</h1><br>
+            <tr>
+                <td>
+                    <label>Longitude</label>
+                </td>
+                <td>
+
+                    <input name="Longitude" type="number" step="0.01"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+            <label>Latitude</label>
+            </td>
+            <td>
+            <input name="Latitude" type="number" step="0.01"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <label>Housing Median Age </label>
+            </td>
+            <td>
+            <input name="Housing Median Age" type="number" step="0.01"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <label>Total Rooms</label>
+            </td>
+            <td>
+            <input name="Total Rooms" type="number" step="0.01"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <label>Total Bedrooms</label>
+            </td>
+            <td>
+            <input name="Total Bedrooms" type="number" step="0.01"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <label>Population</label>
+            </td>
+            <td>
+            <input name="Population" type="number" step="0.01"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <label>Households</label>
+            </td>
+            <td>
+            <input name="Households" type="number" step="0.01"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <label>Median Income</label>
+            </td>
+            <td>
+            <input name="Median Income" type="number" step="0.01"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <input type="submit" value="Calculate price"><br><br>
+            </td>
+        </tr>
+
+        </form>
+    </table>
+
+</body>
+
+</html>

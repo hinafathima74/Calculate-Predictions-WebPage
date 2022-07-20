@@ -1,0 +1,75 @@
+                                          Contacts App
+
+
+
+The contacts app zip file contain a  python code main.py code that when executed takes you to a web page where you are allowed to sign in and sign up.
+There are two scenarios ,
+1.when the user already has an account and can login into the web page.When the user enters his email and password the code checks for its availibility in the myql database which is specifically created to store the email address,password,and a secret in it.When the data is matched the user is directed to a page where it says that he has successfully logged in.
+2.when the user does not have an existing accout.When the entered email is not found in the databse the user is redirected to a page where he is asked to register first in order to log in .The user is then asked to enter his email address,password and secret key which is then stored in the databse .The user is then directed to a page where it shows that he has successfully logged in.
+The Base code can be run on any IDE's for example Pycharm.
+(The following web page was developed using Pycharm)
+
+
+Required libraries to run the Base code:
+1.Flask
+2.Flask_MYSQLdb
+
+
+Making connectio to the Mysql workbench:
+
+Following are the commands used in main.py to create a connection.
+below is the addressof  databse used in the main.py.
+app.config["MYSQL_HOST"]="localhost"
+	#Replace here "localhost" with the host name of your Mysql workbench
+app.config["MYSQL_USER"]="root"
+	#Replace here "USER" with the username name of your workbench
+app.config["MYSQL_PASSWORD"]=#"your password"
+	#Add the password to your username here 
+app.config["MYSQL_DB"]="hinadb"
+	#Replace "hinadb" with the name of the databse you want to create
+
+How to create a database:
+The following is the query to create a new databse and a new table for the entries.You can go to mysql workbench and execute the following query and a new database will be created.
+
+   create database hinadb;
+   use hinadb1;
+   CREATE TABLE login2 (
+    id int,
+    email varchar(50),
+    password varchar(50),
+    SecretKey(50),
+  );
+    
+
+The following lines in the main.py must be altered:
+
+    cursor.execute("SELECT * from login2 WHERE email=%s AND password=%s",(email,password))
+    ('INSERT INTO login2 VALUES (NULL,%s,%s,%s)', (email, password, SecretKey,))
+    #In the above queries replace "login2" with the table name just created.
+
+
+Steps to run the code:
+1.Create a new project in an IDE for example pycharm , install the mentioned packages (Flask,Flask_MYSQLdb) under the same project.
+2.Open the main.py file save the main.py file under a root library virtual environment .
+3.Also save the html files which were used to design the front end under created project under a package called templates and save them as html files.
+4.Run the main.py code .
+5. http://127.0.0.1:5000,this link is generated in the output terminal.
+6.When opened the above link in a browser it takes you login page.
+
+You can then visit your mysql workbench and view the data enterd in the database.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
